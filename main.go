@@ -5,22 +5,20 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"log"
 	"net/http"
 	"os"
 
 	"github.com/gin-gonic/gin"
-	"github.com/joho/godotenv"
 	"google.golang.org/api/option"
 	"google.golang.org/api/translate/v2"
 )
 
 // функция init() вызывается автоматически при запуске программы и загружает переменные окружения из файла .env
-func init() {
-	if err := godotenv.Load(); err != nil {
-		log.Fatal("Error loading .env file")
-	}
-}
+//func init() {
+//	if err := godotenv.Load(); err != nil {
+//		log.Fatal("Error loading .env file")
+//	}
+//}
 
 func main() {
 
